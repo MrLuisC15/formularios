@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="siguiente.php" method="POST">
+            <fieldset data-nordpass-autofill="identity">
+                <legend>Formulario de contacto</legend>
+                <label>Nombre:</label>
+                <input type="text" name="nombre">
+                <br><br>
+                 <label>Telefono:</label>
+                <input type="tel" name="telefono" pattern="[1-9]{3}-[1-9]{3}-[1-9]{3}" > <!--Funciona segun el navegador, para que salga el telefono asi: 111-222-333-->
+                <br><br>
+                 <label>Correo:</label>
+                <input type="email" name="email">
+                <br><br>
+                <label>Correcto:</label>
+                <input type="checkbox" name="correcto">
+                <br><br>
+                <label>Consulta:</label>
+                <br>
+                <textarea name="consulta"></textarea>
+                <br><br>
+                <input type="reset" data-np-checked="1"> <br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>
