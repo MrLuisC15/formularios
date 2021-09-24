@@ -5,11 +5,11 @@
     </head>
     <body>
         <?php
-            $nombre= isset($_POST['nombre']) ? $_POST['nombre'] : "";
-            $telefono= isset($_POST['telefono']) ? $_POST['telefono'] : "";
-            $email= isset($_POST['email']) ? $_POST['email'] : "";
-            $consulta= isset($_POST['consulta']) ? $_POST['consulta'] : "";
-            $correcto= isset($_POST['correcto']) ? $_POST['correcto'] : "";
+            $nombre= isset($_GET['nombre']) ? $_GET['nombre'] : "";
+            $telefono= isset($_GET['telefono']) ? $_GET['telefono'] : "";
+            $email= isset($_GET['email']) ? $_GET['email'] : "";
+            $consulta= isset($_GET['consulta']) ? $_GET['consulta'] : "";
+            $correcto= isset($_GET['correcto']) ? $_GET['correcto'] : "";
 
             echo "Nombre: ".$nombre."<br />";
             echo "Telefono: ".$telefono."<br />";
